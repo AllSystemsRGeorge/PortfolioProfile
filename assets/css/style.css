@@ -42,6 +42,11 @@ button:active {
     box-shadow: 0 0 10px #000 inset;
 }
 
+button:focus {
+    outline: none;
+    border-color: #8ac4ff;
+  }
+
 @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
