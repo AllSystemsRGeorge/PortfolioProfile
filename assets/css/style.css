@@ -26,7 +26,45 @@ aside {
 .justify-center {
     justify-content: center;
   }
-  
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+  .code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--heliotrope);
+    outline: 2px dashed var(--gin);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card .card-header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--outer-space);
+    color: var(--heliotrope);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+.code-card .code-block {
+    flex-grow: 1;
+}
 
 footer {
     padding: 20px;
@@ -34,6 +72,8 @@ footer {
     background: #13293d;
     color: #fff;
 }
+
+
 
 
 button:hover {
