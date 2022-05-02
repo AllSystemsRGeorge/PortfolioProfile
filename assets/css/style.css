@@ -2,11 +2,27 @@
 
 
 header {
-    padding: 40px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
 }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+aside {
+    display: block;
+    justify-content: left;
+}
+
 
 footer {
     padding: 20px;
@@ -14,6 +30,7 @@ footer {
     background: #13293d;
     color: #fff;
 }
+
 
 button:hover {
     background-color: #772014;
@@ -24,4 +41,14 @@ button:active {
     font-size: 180%;
     box-shadow: 0 0 10px #000 inset;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
     
