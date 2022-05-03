@@ -1,5 +1,7 @@
 
-
+body {
+    background-color: rgb(230, 216, 216);
+}
 
 header {
     display: flex;
@@ -19,8 +21,9 @@ nav a:hover {
 }
 
 aside {
-    display: block;
-    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .justify-center {
@@ -34,7 +37,7 @@ aside {
     margin-bottom: 1.5rem;
 }
 
-  .code-card {
+.code-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
