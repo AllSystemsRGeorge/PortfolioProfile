@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(54, 54, 54);
 }
 
 header h1 {
@@ -58,18 +58,18 @@ header {
 }
 
 
-aside {
-    float: left;
-    justify-content: space-around;
-}
-
-aside h1 {
+.aside {
     font-size: 75px;
     color: #02a422;
-    flex-direction: column;
-    justify-content: space-between;
+    float: left;
+    justify-content: space-around;
     border-right-style: solid;
-    border-right-color: rgb(13, 255, 0);
+    border-right-color: #02a422;
+}
+
+.mystory {
+    float: right;
+    justify-content: center;
 }
 
 
