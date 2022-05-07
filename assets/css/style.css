@@ -1,35 +1,43 @@
+:root {
+    --green: #02a422;
+    --darkgreen: #099f09;
+    --white: white;
+    --darkgrey: rgb(54, 54, 54);
+}
+
 * {
     margin: 0;
     padding: 0;
     }
 
 body {
-    background-color: rgb(54, 54, 54);
+    background-color: var(--darkgrey);
     margin: 0px;
     padding: 0px;
 }
 
 p {
     font-size: 20px;
-    color:#02a422;
+    color:var(--green);
     line-height: 1.5;
     margin: 0 0 10px 0;
 }
 
 header h1 {
     font-size: 75px;
-    color:#02a422;
+    color: var(--green);
 }
 
 h2, h3 {
     font-size: 25px;
-    color:#13c737;
+    color:var(--green);
 }
 
 
 
 .img-border {
-    border: 7px solid rgb(17, 143, 0);
+    border: 7px solid; 
+    color: var(--green);
   }
 
 header {
@@ -41,27 +49,31 @@ header {
 }
 
 .header-img {
-    height: 100px;}
+    height: 100px;
+}
 
 .nav {
     list-style: none;
 }
+
 .nav .nav-item {
     float: left;
 }
+
 .nav .nav-item:hover {
 }
 
 .nav .nav-item a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     display: block;
     text-align: center;
     padding: 20px 30px;
-    background-color: #099f09;
+    background-color: var(--darkgreen);
 }
+
 .nav-item a:hover {
-    background-color: #039921;
+    background-color: var(--darkgreen);
 }
 
 article {
@@ -72,12 +84,12 @@ article {
 
 .aside {
     font-size: 75px;
-    color: #02a422;
+    color: var(--green);
     float: left;
     padding-right: 50px;
     justify-content: space-around;
     border-right-style: groove;
-    border-right-color: #02a422;
+    border-right-color: var(--green);
 }
 
 .contact {
@@ -85,7 +97,7 @@ article {
     flex-direction: row;
     justify-content: space-evenly;
     text-decoration: underline;
-    text-decoration-color: #02a422;
+    text-decoration-color: var(--green);
 }
 
 .content {
@@ -96,7 +108,8 @@ article {
 }
       
 #workbox {
-    border: 5px solid #02a422;
+    border: 5px solid; 
+    border-color: var(--green);
     background-image: url(https://www.allworship.com/wp-content/uploads/2015/06/bigstock-Work-In-Progress-Concept-73569091.jpg);
     background-repeat: no-repeat;
     background-size:contain;
@@ -107,7 +120,8 @@ article {
 }
 
 #codingbox {
-    border: 5px solid #02a422;
+    border: 5px solid;
+    border-color: var(--green);
     border-image: url(https://educore.org/wp-content/uploads/2017/06/secure-coding.png);
     border-image-slice: 17 48 fill;
     border-image-repeat: stretch;
@@ -118,7 +132,8 @@ article {
 }
 
 #projectbox {
-    border: 5px solid #02a422;
+    border: 5px solid;
+    border-color: var(--green);
     background-image: url(https://inlea.com/web21/wp-content/uploads/2017/07/project-manager-inlea-scaled.jpg);
     border-image-slice: 17 48 fill;
     border-image-repeat: space;
@@ -128,7 +143,8 @@ article {
 }
 
 #educationbox {
-    border: 5px solid #02a422;
+    border: 5px solid;
+    border-color: var(--green);
     background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/freedomtovape/pages/785/meta_images/original/education.jpg?1597085884);
     border-image-slice: 17 48 fill;
     border-image-repeat: stretch;
@@ -138,7 +154,8 @@ article {
 }
 
 #reviewbox {
-    border: 5px solid #02a422;
+    border: 5px solid;
+    border-color: var(--green);
     background-image: url(https://anthillonline.com/wp-content/uploads/2016/01/online-reviews.jpg);
     border-image-slice: 17 48 fill;
     border-image-repeat: stretch;
@@ -152,14 +169,14 @@ article {
 footer {
     padding: 20px;
     text-align: center;
-    background: #008b00;
+    background-color: var(--darkgreen);
     color: #fff;
 }
 
 .button {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    background: #02a422;
+    color: var(--white);
+    background: var(--green);
     padding: 15px 40px;
     border-radius: 4px;
     font-weight: normal;
@@ -168,8 +185,8 @@ footer {
   }
 
 .glow-button:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(1, 255, 27, 0.4);
+    color: var(--white);
+    box-shadow: 0 5px 15px var(--darkgreen);
   }
 
 @media screen and (max-width: 900px) {
