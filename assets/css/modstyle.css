@@ -18,13 +18,6 @@ h3 {
     color:#13c737;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
 .img-border {
     border: 7px solid rgb(17, 143, 0);
   }
@@ -71,16 +64,6 @@ header {
     border-right-color: #02a422;
 }
 
-#left {
-    float: left
-}
-
-#right{
-    float: right
-}
-
-
-
 /* Container holding the image and the text */
 .container {
     flex-direction: flex;
@@ -104,17 +87,15 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     text-decoration: underline;
-    padding
+    text-decoration-color: #02a422;
 }
 
-.box {
-    border: 5px solid rebeccapurple;
-    background-color: lightgray;
-    padding: 40px;
-    margin: 40px;
-    width: 300px;
-    height: 150px;
-  }
+.content {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 199px 1fr;
+    margin: 0%;
+}
   
 .alternate {
     box-sizing: border-box;
@@ -124,19 +105,19 @@ header {
     border: 5px solid #02a422;
     background-image: url(https://www.allworship.com/wp-content/uploads/2015/06/bigstock-Work-In-Progress-Concept-73569091.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:contain
     padding: 200px;
-    margin: 200px;
+    margin: 300px;
     width: 200px;
     height: 150px;
   }
 
 #codingbox {
     border: 5px solid #02a422;
-    background-image: url(https://educore.org/wp-content/uploads/2017/06/secure-coding.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 100px;
+    border-image: url(https://educore.org/wp-content/uploads/2017/06/secure-coding.png);
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
     margin: 200px;
     width: 200px;
 
@@ -145,9 +126,9 @@ header {
 #projectbox {
     border: 5px solid #02a422;
     background-image: url(https://inlea.com/web21/wp-content/uploads/2017/07/project-manager-inlea-scaled.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 100px;
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
     margin: 200px;
     width: 200px;
 }
@@ -155,9 +136,9 @@ header {
 #educationbox {
     border: 5px solid #02a422;
     background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/freedomtovape/pages/785/meta_images/original/education.jpg?1597085884);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 100px;
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
     margin: 200px;
     width: 200px;
 }
@@ -165,9 +146,9 @@ header {
 #reviewbox {
     border: 5px solid #02a422;
     background-image: url(https://anthillonline.com/wp-content/uploads/2016/01/online-reviews.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 100px;
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
     margin: 200px;
     width: 200px;
     
