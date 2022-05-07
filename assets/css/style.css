@@ -1,28 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
 
 body {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(54, 54, 54);
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 20px;
+    color:#02a422;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
 }
 
 header h1 {
     font-size: 75px;
-    font-family: url(https://www.fontspace.com/excluded-font-f43356);
-    color:#02a422
+    color:#02a422;
 }
 
-h3 {
+h2, h3 {
     font-size: 25px;
     color:#13c737;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+
 
 .img-border {
-    border: 5px solid rgb(17, 143, 0);
+    border: 7px solid rgb(17, 143, 0);
   }
 
 header {
@@ -57,58 +64,90 @@ header {
     background-color: #039921;
 }
 
-
-aside {
-    float: left;
-    justify-content: space-around;
+article {
+    padding-top: 100px;
+    margin-bottom: 0%;
 }
 
-aside h1 {
+
+.aside {
     font-size: 75px;
     color: #02a422;
-    flex-direction: column;
-    justify-content: space-between;
-    border-right-style: solid;
-    border-right-color: rgb(13, 255, 0);
+    float: left;
+    padding-right: 50px;
+    justify-content: space-around;
+    border-right-style: groove;
+    border-right-color: #02a422;
 }
-
-
-
-/* Container holding the image and the text */
-.container {
-    position: relative;
-  }
-  
-  /* Bottom right text */
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    left: 400px;
-    background-color: rgb(3, 153, 0);
-    color: rgb(1, 1, 1);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-
-
-#rcorners4 {
-    border-radius: 50px;
-    background: url(https://anthillonline.com/wp-content/uploads/2016/01/online-reviews.jpg);
-    background-position: left top;
-    background-repeat: repeat;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-  }
 
 .contact {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-decoration: underline;
+    text-decoration-color: #02a422;
 }
+
+.content {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 199px 1fr;
+    margin: 0%;
+}
+      
+#workbox {
+    border: 5px solid #02a422;
+    background-image: url(https://www.allworship.com/wp-content/uploads/2015/06/bigstock-Work-In-Progress-Concept-73569091.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 200px;
+    margin: 300px;
+    width: 200px;
+    height: 150px;
+}
+
+#codingbox {
+    border: 5px solid #02a422;
+    border-image: url(https://educore.org/wp-content/uploads/2017/06/secure-coding.png);
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
+    margin: 200px;
+    width: 200px;
+
+}
+
+#projectbox {
+    border: 5px solid #02a422;
+    background-image: url(https://inlea.com/web21/wp-content/uploads/2017/07/project-manager-inlea-scaled.jpg);
+    border-image-slice: 17 48 fill;
+    border-image-repeat: space;
+    padding: 100px 200px 100px 200px;
+    margin: 200px;
+    width: 200px;
+}
+
+#educationbox {
+    border: 5px solid #02a422;
+    background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/freedomtovape/pages/785/meta_images/original/education.jpg?1597085884);
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
+    margin: 200px;
+    width: 200px;
+}
+
+#reviewbox {
+    border: 5px solid #02a422;
+    background-image: url(https://anthillonline.com/wp-content/uploads/2016/01/online-reviews.jpg);
+    border-image-slice: 17 48 fill;
+    border-image-repeat: stretch;
+    padding: 100px 200px 100px 200px;
+    margin: 200px;
+    width: 200px;
+    
+}
+
 
 footer {
     padding: 20px;
@@ -117,19 +156,20 @@ footer {
     color: #fff;
 }
 
-button:hover {
-    background-color: #772014;
-    color: #fff;
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: #02a422;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
   }
 
-button:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-}
-
-button:focus {
-    outline: none;
-    border-color: #8ac4ff;
+.glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(1, 255, 27, 0.4);
   }
 
 @media screen and (max-width: 900px) {
