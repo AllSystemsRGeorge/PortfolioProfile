@@ -1,17 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
 
 body {
     background-color: rgb(54, 54, 54);
 }
 
 p {
-    font-size: 25px;
-    color:#02a422  
+    font-size: 20px;
+    color:#02a422;
+    line-height: 1.5;
+      
 }
 
 header h1 {
     font-size: 75px;
     color:#02a422;
 }
+
+h2 {font-size: 25px;
+    color:#13c737;}
 
 h3 {
     font-size: 25px;
@@ -54,32 +63,20 @@ header {
     background-color: #039921;
 }
 
+article {
+    padding-top: 100px;
+    margin-bottom: 0%;
+}
+
 
 .aside {
     font-size: 75px;
     color: #02a422;
     float: left;
+    padding-right: 50px;
     justify-content: space-around;
     border-right-style: groove;
     border-right-color: #02a422;
-}
-
-/* Container holding the image and the text */
-.container {
-    flex-direction: flex;
-    justify-content: center;
-
-  }
-  
-  /* Bottom right text */
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    left: 400px;
-    background-color: rgb(3, 153, 0);
-    color: rgb(1, 1, 1);
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .contact {
@@ -96,21 +93,17 @@ header {
     grid-template-rows: 199px 1fr;
     margin: 0%;
 }
-  
-.alternate {
-    box-sizing: border-box;
-  }
       
 #workbox {
     border: 5px solid #02a422;
     background-image: url(https://www.allworship.com/wp-content/uploads/2015/06/bigstock-Work-In-Progress-Concept-73569091.jpg);
     background-repeat: no-repeat;
-    background-size:contain
+    background-size:contain;
     padding: 200px;
     margin: 300px;
     width: 200px;
     height: 150px;
-  }
+}
 
 #codingbox {
     border: 5px solid #02a422;
@@ -127,7 +120,7 @@ header {
     border: 5px solid #02a422;
     background-image: url(https://inlea.com/web21/wp-content/uploads/2017/07/project-manager-inlea-scaled.jpg);
     border-image-slice: 17 48 fill;
-    border-image-repeat: stretch;
+    border-image-repeat: space;
     padding: 100px 200px 100px 200px;
     margin: 200px;
     width: 200px;
@@ -162,19 +155,20 @@ footer {
     color: #fff;
 }
 
-button:hover {
-    background-color: #772014;
-    color: #fff;
+.button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: #02a422;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
   }
 
-button:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-}
-
-button:focus {
-    outline: none;
-    border-color: #8ac4ff;
+.glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(1, 255, 27, 0.4);
   }
 
 @media screen and (max-width: 900px) {
